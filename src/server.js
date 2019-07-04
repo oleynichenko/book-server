@@ -9,7 +9,7 @@ const run = () => {
       return console.error(`Ошибка при запуске сервера`, err.message);
     }
 
-    return console.info(`Сервер запущен на порту ${config.HOST}:${config.PORT}`);
+    return console.info(`Сервер запущен на ${config.HOST}:${config.PORT}`);
   });
 };
 
