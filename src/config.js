@@ -1,15 +1,15 @@
 // required environment variables
 [
-  'NODE_ENV',
-  'PORT',
-  'HOST',
-  'DB_HOST',
-  'DB_USER',
-  'DB_PASSWORD',
-  'DB_NAME'
+  `NODE_ENV`,
+  `PORT`,
+  `HOST`,
+  `DB_HOST`,
+  `DB_USER`,
+  `DB_PASSWORD`,
+  `DB_NAME`
 ].forEach((name) => {
   if (!process.env[name]) {
-    throw new Error(`Environment variable ${name} is missing`)
+    throw new Error(`Environment variable ${name} is missing`);
   }
 });
 

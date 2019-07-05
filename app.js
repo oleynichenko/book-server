@@ -1,6 +1,6 @@
-require('dotenv').config();
-const server = require('./src/server');
-const connectDb = require('./src/db');
+require(`dotenv`).config();
+const server = require(`./src/server`);
+const connectDb = require(`./src/db`);
 
 connectDb()
   .on(`error`, () => {
@@ -10,4 +10,3 @@ connectDb()
     console.log(`DB is connected`);
     server.run();
   });
-

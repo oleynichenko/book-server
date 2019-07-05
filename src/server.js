@@ -1,5 +1,5 @@
-const express = require('express');
-const config = require('./config');
+const express = require(`express`);
+const config = require(`./config`);
 
 const server = express();
 
