@@ -1,0 +1,39 @@
+[
+  {
+    "sourceId": "he-bb",
+    "language": "he",
+    "name": {
+      "ru": "Иврит Бней Барух",
+      "he": "עברית בני ברוך",
+      "en": "Hebrew Bnei Baruch"
+    },
+    "authorId": "bb"
+  },
+  {
+    "sourceId": "en-bb",
+    "language": "en",
+    "name": {
+      "ru": "Английский Бней Барух",
+      "he": "אנגלית בני ברוך",
+      "en": "English Bnei Baruch"
+    }
+  },
+  {
+    "sourceId": "ru-bb",
+    "language": "ru",
+    "name": {
+      "ru": "Русский Бней Барух",
+      "he": "רוסית בני ברוך",
+      "en": "Russian Bnei Baruch"
+    }
+  },
+  {
+    "sourceId": "ru-zaharin",
+    "language": "ru",
+    "name": {
+      "ru": "Русский В. Захарин",
+      "he": "רוסית זכריה",
+      "en": "Russian V. Zacharin"
+    }
+  }
+]

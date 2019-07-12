@@ -3,7 +3,8 @@ const {
   langSchema,
   menuItemSchema,
   commentSchema,
-  articleSchema} = require(`./schemas`);
+  articleSchema
+} = require(`./schemas`);
 
 const ObjectId = mongoose.Schema.Types.ObjectId;
 

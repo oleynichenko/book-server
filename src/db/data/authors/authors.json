@@ -1,0 +1,30 @@
+[
+  {
+    "authorId": "bb",
+    "name": {
+      "ru": "Бней Барух",
+      "he": "בני ברוך",
+      "en": "Bnei Baruch"
+    },
+    "description": {
+      "ru": "",
+      "he": "",
+      "en": ""
+    },
+    "contacts": ""
+  },
+  {
+    "authorId": "zaharin",
+    "name": {
+      "ru": "Вениамин Захарин",
+      "he": "",
+      "en": "Veniamin Zaharin"
+    },
+    "description": {
+      "ru": "",
+      "he": "",
+      "en": ""
+    },
+    "contacts": ""
+  }
+]

@@ -1,29 +1,28 @@
 {
-  "bookId": "ptiha",
-  "languages": ["ru", "he", "en"],
+  "bookId": "pticha",
+  "sources": {
+    "default": {
+      "ru": "zaharin",
+      "he": "bb",
+      "en": "bb"
+    },
+    "available": {
+      "ru": ["zaharin", "bb"],
+      "he": ["bb"],
+      "en": ["bb"]
+    }
+  },
   "title": {
     "ru": "Введение в мудрость Каббалы",
     "he": "פתיחה לחכמת הקבלה",
     "en": "Preface to the Wisdom of Kabbalah"
   },
   "articles": [
-    {
-      "articleId": "foreword",
-      "title": {
-        "ru": "Предисловие к Введение в мудрость Каббалы",
-        "he": "הקדמה לפתיחה לחכמת הקבלה",
-        "en": "Introduction to the Preface to the Wisdom of Kabbalah"
-      },
-      "paragraphs": [
-        {
-          "paragraphId": "",
-          "content": {
-            "ru": "Предисловие к Введение в мудрость Каббалы",
-            "he": "הקדמה לפתיחה לחכמת הקבלה",
-            "en": "Introduction to the Preface to the Wisdom of Kabbalah"
-          }
-        }
-      ]
-    }
+    "pticha-foreword",
+    "pticha-1",
+    "pticha-2"
+  ],
+  "menu": [
+
   ]
 }

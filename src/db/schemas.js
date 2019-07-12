@@ -18,9 +18,9 @@ const langSchema = new Schema({
   }
 });
 
-const paragraphSchema = new Schema({
-  paragraphId: ObjectId,
-  content: langSchema
+const chunkSchema = new Schema({
+  chunkId: ObjectId,
+  content: String
 });
 
 const menuItemSchema = new Schema({
@@ -34,19 +34,23 @@ const menuItemSchema = new Schema({
   }]
 });
 
+// для комментариев на статьи
 const commentSchema = new Schema({
-  language: String,
   commentId: String,
+  authorId: String,
+  articleId: String,
   title: String,
-  author: ObjectId,
-  content: String
+  chunks: [chunkSchema]
 });
 
+// для статей книги
 const articleSchema = new Schema({
   articleId: String,
-  title: langSchema,
-  paragraphs: [paragraphSchema],
-  comments: [commentSchema],
+  authorId: String,
+  title: String,
+  bookId: String,
+  chunks: [chunkSchema],
+  comments: [String],
   tags: [String]
 });
 
