@@ -1,0 +1,26 @@
+[
+  {
+    "langId": "ru",
+    "name": {
+      "ru": "Русский",
+      "he": "רוסית",
+      "en": "Russian"
+    }
+  },
+  {
+    "langId": "en",
+    "name": {
+      "ru": "Английский",
+      "he": "אנגלית",
+      "en": "English"
+    }
+  },
+  {
+    "langId": "he",
+    "name": {
+      "ru": "Иврит",
+      "he": "עברית",
+      "en": "Hebrew"
+    }
+  }
+]
