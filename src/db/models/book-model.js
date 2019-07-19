@@ -4,7 +4,7 @@ const {
   menuItemSchema,
   commentSchema,
   articleSchema
-} = require(`./schemas`);
+} = require(`src/db/models/schemas`);
 
 const ObjectId = mongoose.Schema.Types.ObjectId;
 

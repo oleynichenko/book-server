@@ -1,6 +1,7 @@
 [
   {
     "commentId": "or-shalom-1",
+    "langId": "ru",
     "authorId": "zaharin",
     "articleId": "pticha-1",
     "title": "Ор Шалом",
@@ -13,6 +14,7 @@
   },
   {
     "commentId": "or-shalom-2",
+    "langId": "ru",
     "authorId": "zaharin",
     "articleId": "pticha-2",
     "title": "Ор Шалом",

@@ -2,7 +2,7 @@
   {
     "articleId": "pticha-foreword",
     "authorId": "bb",
-    "lang": "he",
+    "langId": "he",
     "title": "הקדמה לפתיחה לחכמת הקבלה",
     "bookId": "pticha",
     "chunks": [
@@ -19,7 +19,7 @@
   {
     "articleId": "pticha-1",
     "authorId": "bb",
-    "lang": "he",
+    "langId": "he",
     "title": "א",
     "bookId": "pticha",
     "chunks": [
@@ -48,7 +48,7 @@
   {
     "articleId": "pticha-2",
     "authorId": "bb",
-    "lang": "he",
+    "langId": "he",
     "title": "ב",
     "bookId": "pticha",
     "chunks": [

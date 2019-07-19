@@ -1,5 +1,5 @@
 const mongoose = require(`mongoose`);
-const {langSchema} = require(`./schemas`);
+const {langSchema} = require(`src/db/models/schemas`);
 
 const ObjectId = mongoose.Schema.Types.ObjectId;
 

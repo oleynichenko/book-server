@@ -1,28 +1,78 @@
-{
-  "bookId": "pticha",
-  "sources": {
-    "default": {
-      "ru": "zaharin",
-      "he": "bb",
-      "en": "bb"
+[
+  {
+    "bookId": "pticha",
+    "sources": [
+      {
+        "langId": "ru",
+        "authors": ["zaharin", "bb"],
+        "defaultAuthor": "zaharin"
+      },
+      {
+        "langId": "en",
+        "authors": ["bb"],
+        "defaultAuthor": "bb"
+      },
+      {
+        "langId": "he",
+        "authors": ["bb"],
+        "defaultAuthor": "bb"
+      }
+    ],
+    "title": {
+      "ru": "Введение в мудрость Каббалы",
+      "he": "פתיחה לחכמת הקבלה",
+      "en": "Preface to the Wisdom of Kabbalah"
     },
-    "available": {
-      "ru": ["zaharin", "bb"],
-      "he": ["bb"],
-      "en": ["bb"]
-    }
-  },
-  "title": {
-    "ru": "Введение в мудрость Каббалы",
-    "he": "פתיחה לחכמת הקבלה",
-    "en": "Preface to the Wisdom of Kabbalah"
-  },
-  "articles": [
-    "pticha-foreword",
-    "pticha-1",
-    "pticha-2"
-  ],
-  "menu": [
-
-  ]
-}
+    "sideMenu": [
+      {
+        "title": {
+          "ru": "Предисловие",
+          "he": "הקדמה",
+          "en": "Foreword"
+        },
+        "articleId": "pticha-foreword"
+      },
+      {
+        "title": {
+          "ru": "1",
+          "he": "א",
+          "en": "1"
+        },
+        "articleId": "pticha-1"
+      },
+      {
+        "title": {
+          "ru": "2",
+          "he": "ב",
+          "en": "2"
+        },
+        "articleId": "pticha-2"
+      },
+      {
+        "title": {
+          "ru": "5 бхинот в масахе",
+          "he": "ה' בחינות שבמסך",
+          "en": "Five Behinot in the Masach"
+        },
+        "children": [
+          {
+            "title": {
+              "ru": "1",
+              "he": "א",
+              "en": "1"
+            },
+            "articleId": "pticha-1"
+          },
+          {
+            "title": {
+              "ru": "2",
+              "he": "ב",
+              "en": "2"
+            },
+            "articleId": "pticha-2"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -2,7 +2,7 @@
   {
     "articleId": "pticha-foreword",
     "authorId": "bb",
-    "lang": "ru",
+    "langId": "ru",
     "title": "Предисловие к 'Введение в науку Каббала'",
     "bookId": "pticha",
     "chunks": [
@@ -19,7 +19,7 @@
   {
     "articleId": "pticha-1",
     "authorId": "bb",
-    "lang": "ru",
+    "langId": "ru",
     "title": "1",
     "bookId": "pticha",
     "chunks": [
@@ -48,7 +48,7 @@
   {
     "articleId": "pticha-2",
     "authorId": "bb",
-    "lang": "ru",
+    "langId": "ru",
     "title": "2",
     "bookId": "pticha",
     "chunks": [
