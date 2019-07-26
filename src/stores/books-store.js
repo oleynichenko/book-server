@@ -49,6 +49,10 @@ const getBookAuthors = (id) => {
   }, []);
 };
 
+const getInterfaceLangs = (id) => {
+  return _getBook(id).interfaceLangs;
+};
+
 const getBookSources = (id) => {
   return _getBook(id).sources;
 };
@@ -58,6 +62,7 @@ module.exports = {
   getBookSideMenu,
   getBookAuthors,
   getBookLangs,
-  getBookSources
+  getBookSources,
+  getInterfaceLangs
 };
 

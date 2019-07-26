@@ -10,6 +10,7 @@ const getBookInterface = (req, res) => {
   const langId = req.params.langId;
 
   const sideMenu = bookStore.getBookSideMenu(langId, bookId);
+  const interfaceLangs = bookStore.getInterfaceLangs(bookId);
   // берем доступные языка из книги
   const langsIds = bookStore.getBookLangs(bookId);
   const langMenu = languageStore.getLangNames(langsIds, langId);
@@ -18,8 +19,9 @@ const getBookInterface = (req, res) => {
 
   const data = {
     title,
+    interfaceLangs,
     sideMenu,
-    langMenu,
+    // langMenu,
     bookId,
     langId
   };
@@ -57,7 +59,17 @@ const getArticleInterface = (req, res) => {
   res.send(data);
 };
 
+const getLangMenu = (req, res) => {
+  const langId = req.params.langId;
+  const langsIds = req.params.langsIds.split(`-`);
+
+  const langMenu = languageStore.getLangNames(langsIds, langId);
+
+  res.send(langMenu);
+};
+
 module.exports = {
   getBookInterface,
-  getArticleInterface
+  getArticleInterface,
+  getLangMenu
 };
