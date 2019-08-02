@@ -22,8 +22,7 @@ const getAuthorsNames = (lang, ids) => {
 
 const getAuthorName = (id, lang) => {
   const authors = _getAuthors();
-  console.log(id);
-  console.log(authors);
+
   const author = authors.find((a) => {
     return a.authorId === id;
   });

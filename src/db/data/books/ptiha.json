@@ -2,7 +2,6 @@
   {
     "bookId": "pticha",
     "interfaceLangs": ["ru", "en", "he"],
-    "defaultAuthor": "bb",
     "sources": [
       {
         "langId": "ru",

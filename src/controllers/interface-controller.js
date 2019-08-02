@@ -2,6 +2,7 @@ const bookStore = require(`../stores/books-store`);
 const articleStore = require(`../stores/articles-store`);
 const languageStore = require(`../stores/languages-store`);
 const authorsStore = require(`../stores/authors-store`);
+const commentsStore = require(`../stores/comments-store`);
 
 // langId - это всегда язык интерфейса
 
@@ -14,11 +15,12 @@ const getBookInterface = (req, res) => {
   // берем доступные языка из книги
   const langsIds = bookStore.getBookLangs(bookId);
   const langMenu = languageStore.getLangNames(langsIds, langId);
-
+  const sources = bookStore.getBookSources(bookId);
   const title = bookStore.getTitle(langId, bookId);
 
   const data = {
     title,
+    sources,
     interfaceLangs,
     sideMenu,
     // langMenu,
@@ -29,7 +31,7 @@ const getBookInterface = (req, res) => {
   res.send(data);
 };
 
-const getArticleInterface = (req, res) => {
+const getArticleMenu = (req, res) => {
   const bookId = req.params.bookId;
   const langId = req.params.langId;
   const articleId = req.params.articleId;
@@ -44,19 +46,14 @@ const getArticleInterface = (req, res) => {
     return (source) ? source.authors.includes(a.authorId) : false;
   });
 
-  const articles = allowedArticles.map((a) => {
+  const articleMenu = allowedArticles.map((a) => {
     const langName = languageStore.getLangName(a.langId, langId);
     const authorName = authorsStore.getAuthorName(a.authorId, langId);
 
     return {...a, title: `${langName} - ${authorName}`};
   });
 
-  const data = {
-    articleId,
-    articles
-  };
-
-  res.send(data);
+  res.send(articleMenu);
 };
 
 const getLangMenu = (req, res) => {
@@ -68,8 +65,52 @@ const getLangMenu = (req, res) => {
   res.send(langMenu);
 };
 
+const getCommentData = (req, res) => {
+  const langId = req.params.langId;
+  const articleId = req.params.articleId;
+
+  const comments = commentsStore.getCommentsByArticle(articleId);
+
+  const commentsLangs = comments.reduce((res, c) => {
+    if(!res.includes(c.langId)) {
+      res.push(c.langId);
+    }
+
+    return res;
+  }, []);
+
+  if (commentsLangs.length) {
+    const commentMenu = languageStore.getLangNames(commentsLangs, langId);
+
+    comments.forEach((c) => {
+      const commentMenuItem = commentMenu.find((i) => {
+        return i.langId === c.langId;
+      });
+
+      const commentAuthorName = authorsStore.getAuthorName(c.authorId, c.langId);
+
+      const commentData = {
+        commentId: c.commentId,
+        authorName: commentAuthorName
+      };
+
+      if (c.translatorId) {
+        commentData.translatorName = authorsStore.getAuthorName(c.translatorId, c.langId);
+      }
+
+      commentMenuItem.comments = commentMenuItem.comments || [];
+      commentMenuItem.comments.push(commentData);
+    });
+
+    res.send(commentMenu);
+  } else {
+    res.send(null);
+  }
+};
+
 module.exports = {
   getBookInterface,
-  getArticleInterface,
-  getLangMenu
+  getArticleMenu,
+  getLangMenu,
+  getCommentData
 };
