@@ -14,6 +14,34 @@
     "contacts": ""
   },
   {
+    "authorId": "orhasulam",
+    "name": {
+      "ru": "Ор Сулам",
+      "he": "אור הסולם",
+      "en": "Or Hasulam"
+    },
+    "description": {
+      "ru": "",
+      "he": "",
+      "en": ""
+    },
+    "contacts": ""
+  },
+  {
+    "authorId": "bv",
+    "name": {
+      "ru": "Авраам Брандвайн",
+      "he": "הרב ברנדווין",
+      "en": "Avraham Brandvein"
+    },
+    "description": {
+      "ru": "",
+      "he": "",
+      "en": ""
+    },
+    "contacts": ""
+  },
+  {
     "authorId": "zaharin",
     "name": {
       "ru": "Вениамин Захарин",

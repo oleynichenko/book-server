@@ -1,0 +1,10 @@
+[
+  {
+    "id": "kab",
+    "books": ["pticha", "foreword-zoar"]
+  },
+  {
+    "id": "ramhal",
+    "books": ["pticha"]
+  }
+]

@@ -3,6 +3,6 @@ const controller = require(`../controllers/comment-controller`);
 
 const commentRouter = new express.Router();
 
-commentRouter.get(`/:commentId`, controller.getCommentById);
+commentRouter.get(`/:langId/:commentId/:authorId`, controller.getComment);
 
 module.exports = commentRouter;

@@ -1,12 +1,15 @@
 const commentsStore = require(`../stores/comments-store`);
 
-const getCommentById = (req, res) => {
+const getComment = (req, res) => {
   const commentId = req.params.commentId;
-  const data = commentsStore.getCommentById(commentId);
+  const langId = req.params.langId;
+  const authorId = req.params.authorId;
+
+  const data = commentsStore.getComment(langId, commentId, authorId);
 
   res.send(data);
 };
 
 module.exports = {
-  getCommentById
+  getComment
 };

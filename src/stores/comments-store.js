@@ -1,19 +1,25 @@
-const _comments = require(`../db/data/comments/or-shalom-ru-zaharin.json`);
+const a = require(`../db/data/comments/pticha-ob-ru-zh`);
+const b = require(`../db/data/comments/pticha-os-ru-zh`);
+const e = require(`../db/data/comments/foreword-zoar-brand-ru-zh`);
 
-const getCommentsByArticle = (id) => {
+const _comments = a.concat(b, e);
+
+const getCommentsByArticle = (id, bookId) => {
   return _comments.filter((c) => {
-    return c.articleId === id;
+    return c.articleId === id && c.bookId === bookId;
   });
 };
 
-const getCommentById = (id) => {
+const getComment = (lang, id, author) => {
   return _comments.find((c) => {
-    return c.commentId === id;
+    return c.commentId === id
+      && c.authorId === author
+      && c.langId === lang;
   });
 };
 
 module.exports = {
   getCommentsByArticle,
-  getCommentById
+  getComment
 };
 

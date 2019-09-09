@@ -1,6 +1,117 @@
 [
   {
     "bookId": "pticha",
+    "interfaceLangs": ["ru"],
+    "sources": [
+      {
+        "langId": "ru",
+        "authors": ["zaharin", "bb"],
+        "defaultAuthor": "zaharin"
+      },
+      {
+        "langId": "en",
+        "authors": ["bb"],
+        "defaultAuthor": "bb"
+      },
+      {
+        "langId": "he",
+        "authors": ["orhasulam"],
+        "defaultAuthor": "orhasulam"
+      }
+    ],
+    "title": {
+      "ru": "Введение в мудрость Каббалы",
+      "he": "פתיחה לחכמת הקבלה",
+      "en": "Preface to the Wisdom of Kabbalah"
+    },
+    "mainMenu": [
+      {
+        "title": {
+          "ru": "О книге",
+          "he": "על הספר",
+          "en": "About book"
+        },
+        "pageId": "about-book"
+      },
+      {
+        "title": {
+          "ru": "Об авторе",
+          "he": "על המחבר",
+          "en": "About author"
+        },
+        "pageId": "about-author"
+      },
+      {
+        "title": {
+          "ru": "О проекте",
+          "he": "על הפרויקט",
+          "en": "About project"
+        },
+        "pageId": "about-project"
+      },
+      {
+        "title": {
+          "ru": "Переводчики",
+          "he": "מתרגמים",
+          "en": "Translators"
+        },
+        "pageId": "translators"
+      }
+    ],
+    "sideMenu": [
+      {
+        "title": {
+          "ru": "Пункт 1",
+          "he": "אות א",
+          "en": "Paragraph 1"
+        },
+        "articleId": "1"
+      },
+      {
+        "title": {
+          "ru": "Пункт 2",
+          "he": "אות ב",
+          "en": "Paragraph 2"
+        },
+        "articleId": "2"
+      },
+      {
+        "title": {
+          "ru": "Пункт 3",
+          "he": "אות ג",
+          "en": "Paragraph 3"
+        },
+        "articleId": "3"
+      },
+      {
+        "title": {
+          "ru": "5 бхинот в масахе",
+          "he": "ה' בחינות שבמסך",
+          "en": "Five Behinot in the Masach"
+        },
+        "children": [
+          {
+            "title": {
+              "ru": "Пункт 17",
+              "he": "אות יז",
+              "en": "Paragraph 17"
+            },
+            "articleId": "17"
+          },
+          {
+            "title": {
+              "ru": "Пункт 18",
+              "he": "אות יח",
+              "en": "Paragraph 18"
+            },
+            "articleId": "18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "bookId": "foreword-zoar",
     "interfaceLangs": ["ru", "en", "he"],
     "sources": [
       {
@@ -15,62 +126,97 @@
       },
       {
         "langId": "he",
-        "authors": ["bb"],
-        "defaultAuthor": "bb"
+        "authors": ["orhasulam"],
+        "defaultAuthor": "orhasulam"
       }
     ],
     "title": {
-      "ru": "Введение в мудрость Каббалы",
-      "he": "פתיחה לחכמת הקבלה",
-      "en": "Preface to the Wisdom of Kabbalah"
+      "ru": "Предисловие к книге Зоар",
+      "he": "הקדמה לספר הזוהר",
+      "en": "Introduction to The Book of Zohar"
     },
+    "mainMenu": [
+      {
+        "title": {
+          "ru": "О книге",
+          "he": "על הספר",
+          "en": "About book"
+        },
+        "pageId": "about-book"
+      },
+      {
+        "title": {
+          "ru": "Об авторе",
+          "he": "על המחבר",
+          "en": "About author"
+        },
+        "pageId": "about-author"
+      },
+      {
+        "title": {
+          "ru": "О проекте",
+          "he": "על הפרויקט",
+          "en": "About project"
+        },
+        "pageId": "about-project"
+      },
+      {
+        "title": {
+          "ru": "Переводчики",
+          "he": "מתרגמים",
+          "en": "Translators"
+        },
+        "pageId": "translators"
+      }
+    ],
     "sideMenu": [
       {
         "title": {
-          "ru": "Предисловие",
-          "he": "הקדמה",
-          "en": "Foreword"
-        },
-        "articleId": "pticha-foreword"
-      },
-      {
-        "title": {
-          "ru": "1",
-          "he": "א",
-          "en": "1"
-        },
-        "articleId": "pticha-1"
-      },
-      {
-        "title": {
-          "ru": "2",
-          "he": "ב",
-          "en": "2"
-        },
-        "articleId": "pticha-2"
-      },
-      {
-        "title": {
-          "ru": "5 бхинот в масахе",
-          "he": "ה' בחינות שבמסך",
-          "en": "Five Behinot in the Masach"
+          "ru": "Пункты 1–10",
+          "he": "אוֹתִיוֹת א-י",
+          "en": "Paragraph 1–10"
         },
         "children": [
           {
             "title": {
-              "ru": "1",
-              "he": "א",
-              "en": "1"
+              "ru": "Пункт 1",
+              "he": "אות א",
+              "en": "Paragraph 1"
             },
-            "articleId": "pticha-1"
+            "articleId": "1"
           },
           {
             "title": {
-              "ru": "2",
-              "he": "ב",
-              "en": "2"
+              "ru": "Пункт 2",
+              "he": "אות ב",
+              "en": "Paragraph 2"
             },
-            "articleId": "pticha-2"
+            "articleId": "2"
+          }
+        ]
+      },
+      {
+        "title": {
+          "ru": "Пункты 11–21",
+          "he": "אוֹתִיוֹת יא-כ",
+          "en": "Paragraph 11–21"
+        },
+        "children": [
+          {
+            "title": {
+              "ru": "Пункт 11",
+              "he": "אות יא",
+              "en": "Paragraph 11"
+            },
+            "articleId": "11"
+          },
+          {
+            "title": {
+              "ru": "Пункт 12",
+              "he": "אות יב",
+              "en": "Paragraph 12"
+            },
+            "articleId": "12"
           }
         ]
       }

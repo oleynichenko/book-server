@@ -30,6 +30,17 @@ const getBookSideMenu = (lang, id) => {
   });
 };
 
+const getBookMainMenu = (lang, id) => {
+  const book = _getBook(id);
+
+  return book.mainMenu.map((item) => {
+    return {
+      pageId: item.pageId,
+      title: item.title[lang]
+    };
+  });
+};
+
 const getBookLangs = (id) => {
   const book = _getBook(id);
   return book.sources.map((s) => {
@@ -60,6 +71,7 @@ const getBookSources = (id) => {
 module.exports = {
   getTitle,
   getBookSideMenu,
+  getBookMainMenu,
   getBookAuthors,
   getBookLangs,
   getBookSources,

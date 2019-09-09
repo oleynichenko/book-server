@@ -14,7 +14,8 @@ const getBookInterface = (req, res) => {
   const interfaceLangs = bookStore.getInterfaceLangs(bookId);
   // берем доступные языка из книги
   const langsIds = bookStore.getBookLangs(bookId);
-  const langMenu = languageStore.getLangNames(langsIds, langId);
+  // const langMenu = languageStore.getLangNames(langsIds, langId);
+  const mainMenu = bookStore.getBookMainMenu(langId, bookId);
   const sources = bookStore.getBookSources(bookId);
   const title = bookStore.getTitle(langId, bookId);
 
@@ -23,7 +24,7 @@ const getBookInterface = (req, res) => {
     sources,
     interfaceLangs,
     sideMenu,
-    // langMenu,
+    mainMenu,
     bookId,
     langId
   };
@@ -36,7 +37,7 @@ const getArticleMenu = (req, res) => {
   const langId = req.params.langId;
   const articleId = req.params.articleId;
 
-  const allArticles = articleStore.getArticlesById(articleId);
+  const allArticles = articleStore.getDataArticlesById(articleId, bookId);
   const bookSources = bookStore.getBookSources(bookId);
 
   // нужно выкинуть статьи авторов которых нет в sources книги
@@ -50,7 +51,10 @@ const getArticleMenu = (req, res) => {
     const langName = languageStore.getLangName(a.langId, langId);
     const authorName = authorsStore.getAuthorName(a.authorId, langId);
 
-    return {...a, title: `${langName} - ${authorName}`};
+    return {
+      ...a,
+      title: `${langName} - ${authorName}`,
+    };
   });
 
   res.send(articleMenu);
@@ -65,11 +69,12 @@ const getLangMenu = (req, res) => {
   res.send(langMenu);
 };
 
-const getCommentData = (req, res) => {
+const getCommentMenu = (req, res) => {
   const langId = req.params.langId;
+  const bookId = req.params.bookId;
   const articleId = req.params.articleId;
 
-  const comments = commentsStore.getCommentsByArticle(articleId);
+  const comments = commentsStore.getCommentsByArticle(articleId, bookId);
 
   const commentsLangs = comments.reduce((res, c) => {
     if(!res.includes(c.langId)) {
@@ -91,12 +96,10 @@ const getCommentData = (req, res) => {
 
       const commentData = {
         commentId: c.commentId,
-        authorName: commentAuthorName
+        title: c.title,
+        authorName: commentAuthorName,
+        authorId: c.authorId
       };
-
-      if (c.translatorId) {
-        commentData.translatorName = authorsStore.getAuthorName(c.translatorId, c.langId);
-      }
 
       commentMenuItem.comments = commentMenuItem.comments || [];
       commentMenuItem.comments.push(commentData);
@@ -108,9 +111,16 @@ const getCommentData = (req, res) => {
   }
 };
 
+const getInterfaceLangs = (req, res) => {
+  const bookId = req.params.bookId;
+
+  res.send(bookStore.getInterfaceLangs(bookId));
+};
+
 module.exports = {
   getBookInterface,
   getArticleMenu,
   getLangMenu,
-  getCommentData
+  getCommentMenu,
+  getInterfaceLangs
 };
