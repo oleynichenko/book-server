@@ -9,10 +9,11 @@ const d = require(`../db/data/articles/foreword-zoar-en-bb`);
 
 const _articles = aa.concat(b, c, d, f, e, g, h);
 
-const getArticle = (lang, id, author) => {
+const getArticle = (lang, book, id, author) => {
   return _articles.find((a) => {
     return a.articleId === id
       && a.authorId === author
+      && a.bookId === book
       && a.langId === lang;
   });
 };
