@@ -9,8 +9,13 @@ const _getLanguagesByIds = (ids) => {
   return languages.filter((l) => ids.includes(l.langId));
 };
 
+const getLangById = (id) => {
+  const languages = _getLanguages();
+  return languages.find((l) => l.langId === id);
+};
+
 // ids: [lang], lang - язык необходимого перевода
-const getLangNames = (ids, lang) => {
+const getLangsMenu = (ids, lang) => {
   const languages = _getLanguagesByIds(ids);
 
   return languages.map((item) => {
@@ -32,7 +37,8 @@ const getLangName = (id, lang) => {
 };
 
 module.exports = {
-  getLangNames,
-  getLangName
+  getLangsMenu,
+  getLangName,
+  getLangById
 };
 

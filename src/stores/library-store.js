@@ -1,12 +1,17 @@
 const _libraries = require(`../db/data/libraries`);
 
-const getBooksIds = (id) => {
+const getLibraryById = (id) => {
+  return _libraries.find((l) => l.id === id);
+};
+
+const getLibraryLangs = (id) => {
   const library = _libraries.find((l) => l.id === id);
 
-  return (library) ? library.books : [];
+  return (library) ? library.langs : null;
 };
 
 module.exports = {
-  getBooksIds
+  getLibraryById,
+  getLibraryLangs
 };
 

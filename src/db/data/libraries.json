@@ -1,10 +1,42 @@
 [
   {
     "id": "kab",
-    "books": ["pticha", "foreword-zoar"]
+    "title": "Kabbalah Books",
+    "books": ["pticha", "foreword-zoar"],
+    "langs": ["ru", "he", "en"],
+    "menu": [
+      {
+        "title": {
+          "ru": "О проекте",
+          "he": "על הפרויקט",
+          "en": "About project"
+        },
+        "id": "about"
+      },
+      {
+        "title": {
+          "ru": "Авторы",
+          "he": "המחברים",
+          "en": "Authors"
+        },
+        "id": "authors"
+      }
+    ]
   },
   {
     "id": "ramhal",
-    "books": ["pticha"]
+    "title": "Ramhal books",
+    "books": ["pticha", "foreword-zoar"],
+    "langs": ["ru", "he"],
+    "menu": [
+      {
+        "title": {
+          "ru": "О проекте",
+          "he": "על הפרויקט",
+          "en": "About project"
+        },
+        "id": "about-project"
+      }
+    ]
   }
 ]
