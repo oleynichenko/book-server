@@ -4,22 +4,32 @@ const e = require(`../db/data/comments/foreword-zoar-brand-ru-zh`);
 
 const _comments = a.concat(b, e);
 
-const getCommentsByArticle = (id, bookId) => {
-  return _comments.filter((c) => {
-    return c.articleId === id && c.bookId === bookId;
-  });
+const getDataComments = (id, bookId) => {
+  return _comments
+    .filter((c) => c.articleId === id && c.bookId === bookId)
+    .map((c) => {
+      return {
+        id: c.commentId,
+        author: c.authorId,
+        lang: c.langId,
+        article: c.articleId,
+        title: c.title
+      };
+    });
 };
 
-const getComment = (lang, id, author) => {
+const getComment = (lang, id, author, book, article) => {
   return _comments.find((c) => {
     return c.commentId === id
       && c.authorId === author
+      && c.bookId === book
+      && c.articleId === article
       && c.langId === lang;
   });
 };
 
 module.exports = {
-  getCommentsByArticle,
+  getDataComments,
   getComment
 };
 

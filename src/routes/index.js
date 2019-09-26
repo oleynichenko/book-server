@@ -7,6 +7,7 @@ const commentRouter = require(`./comment-router`);
 const pageRouter = require(`./page-router`);
 const libraryRouter = require(`./library-router`);
 const langsRouter = require(`./langs-router`);
+
 const handleErrors = require(`../errors/handle-errors`);
 
 const init = (app) => {
@@ -14,12 +15,13 @@ const init = (app) => {
     app.use(allowAccess);
   }
 
-  app.use(`/book`, bookRouter);
-  app.use(`/article`, articleRouter);
-  app.use(`/comment`, commentRouter);
-  app.use(`/page`, pageRouter);
+  app.use(`/books`, bookRouter);
+  app.use(`/articles`, articleRouter);
+  app.use(`/comments`, commentRouter);
+  app.use(`/pages`, pageRouter);
   app.use(`/library`, libraryRouter);
   app.use(`/langs`, langsRouter);
+
   app.use(handleErrors);
 };
 

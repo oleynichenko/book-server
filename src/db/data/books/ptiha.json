@@ -3,23 +3,20 @@
     "bookId": "pticha",
     "libraryUrl": "http://kab.tv",
     "langs": ["ru", "he", "en"],
-    "sources": [
-      {
-        "langId": "ru",
+    "sources": {
+      "ru": {
         "authors": ["zaharin", "bb"],
         "defaultAuthor": "zaharin"
       },
-      {
-        "langId": "en",
+      "en": {
         "authors": ["bb"],
         "defaultAuthor": "bb"
       },
-      {
-        "langId": "he",
+      "he": {
         "authors": ["orhasulam"],
         "defaultAuthor": "orhasulam"
       }
-    ],
+    },
     "title": {
       "ru": "Введение в мудрость Каббалы",
       "he": "פתיחה לחכמת הקבלה",
@@ -106,23 +103,20 @@
   {
     "bookId": "foreword-zoar",
     "langs": ["ru", "en", "he"],
-    "sources": [
-      {
-        "langId": "ru",
+    "sources": {
+      "ru": {
         "authors": ["zaharin", "bb"],
         "defaultAuthor": "zaharin"
       },
-      {
-        "langId": "en",
-        "authors": ["bb"],
-        "defaultAuthor": "bb"
+      "en": {
+          "authors": ["bb"],
+          "defaultAuthor": "bb"
       },
-      {
-        "langId": "he",
+      "he": {
         "authors": ["orhasulam"],
         "defaultAuthor": "orhasulam"
       }
-    ],
+    },
     "title": {
       "ru": "Предисловие к книге Зоар",
       "he": "הקדמה לספר הזוהר",

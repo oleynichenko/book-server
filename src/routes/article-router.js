@@ -3,6 +3,9 @@ const controller = require(`../controllers/article-controller`);
 
 const articleRouter = new express.Router();
 
-articleRouter.get(`/:langId/:bookId/:articleId/:authorId`, controller.getArticle);
+// статьи доступные книге согласно book.sources
+articleRouter.get(`/menu/:articleId/:langId/:bookId`, controller.getArticleMenu);
+
+articleRouter.get(`/:articleId/:authorId/:langId/:bookId`, controller.getArticle);
 
 module.exports = articleRouter;

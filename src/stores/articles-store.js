@@ -26,7 +26,7 @@ const getDataArticlesById = (id, bookId) => {
         articleId: a.articleId,
         authorId: a.authorId,
         langId: a.langId,
-        articleTitle: a.title
+        articleTitle: a.title // для title на странице Статьиsaq]=
       };
     });
 };
