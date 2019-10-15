@@ -1,35 +1,51 @@
-const a = require(`../db/data/comments/pticha-ob-ru-zh`);
-const b = require(`../db/data/comments/pticha-os-ru-zh`);
-const e = require(`../db/data/comments/foreword-zoar-brand-ru-zh`);
+const {getDb} = require(`../db`);
 
-const _comments = a.concat(b, e);
+const getCollection = async () => {
+  const db = await getDb();
 
-const getDataComments = (id, bookId) => {
-  return _comments
-    .filter((c) => c.articleId === id && c.bookId === bookId)
-    .map((c) => {
-      return {
-        id: c.commentId,
-        author: c.authorId,
-        lang: c.langId,
-        article: c.articleId,
-        title: c.title
-      };
-    });
+  return db.collection(`comments`);
 };
 
-const getComment = (lang, id, author, book, article) => {
-  return _comments.find((c) => {
-    return c.commentId === id
-      && c.authorId === author
-      && c.bookId === book
-      && c.articleId === article
-      && c.langId === lang;
-  });
-};
+class CommentsStore {
+  constructor(collection) {
+    this.collection = collection;
+  }
 
-module.exports = {
-  getDataComments,
-  getComment
+  getDataComments(id, bookId) {
+    const query = {
+      articleId: id,
+      bookId
+    };
+
+    const projection = {
+      _id: 0,
+      commentId: 1,
+      authorId: 1,
+      langId: 1,
+      articleId: 1,
+      title: 1
+    };
+
+    return this.collection.find(query, {projection}).toArray();
+  }
+
+  getComment(lang, id, author, book, article) {
+    const query = {
+      langId: lang,
+      commentId: id,
+      authorId: author,
+      bookId: book,
+      articleId: article
+    };
+
+    return this.collection.findOne(query);
+  }
+}
+
+module.exports = async () => {
+  const collection = await getCollection()
+    .catch((error) => console.error(`Failed to set up "comments"-collection`, error));
+
+  return new CommentsStore(collection);
 };
 

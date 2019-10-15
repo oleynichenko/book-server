@@ -1,12 +1,23 @@
 const express = require(`express`);
 const config = require(`./config`);
 const routes = require(`./routes`);
+const allowAccess = require(`./middlewares/allow-access`);
 
-const server = express();
+const _createServer = async () => {
+  const server = express();
 
-routes.init(server);
+  if (config.NODE_ENV === `development`) {
+    server.use(allowAccess);
+  }
 
-const run = () => {
+  await routes.init(server);
+
+  return server;
+};
+
+const run = async () => {
+  const server = await _createServer();
+
   server.listen(config.PORT, (err) => {
     if (err) {
       return console.error(`Ошибка при запуске сервера`, err.message);

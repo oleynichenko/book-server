@@ -53,7 +53,7 @@ const getBookData = (req, res) => {
   if (book) {
     if (book.langs.includes(langId)) {
       const sideMenu = _getBookSideMenu(langId, book.sideMenu);
-      const title =  book.title[langId];
+      const title = book.title[langId];
       const mainMenu = _getBookMainMenu(langId, book.mainMenu);
       const langs = book.langs;
       const sources = book.sources;
@@ -77,8 +77,6 @@ const getBookData = (req, res) => {
     throw new NotFoundError(`Book '${bookId}' not found`);
   }
 };
-
-// требует переделки: много запросов к базе
 
 module.exports = {
   getBookData,

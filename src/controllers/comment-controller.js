@@ -1,58 +1,62 @@
-const commentsStore = require(`../stores/comments-store`);
 const languagesStore = require(`../stores/languages-store`);
 const authorsStore = require(`../stores/authors-store`);
 
-const NotFoundError = require(`../errors/not-found-error`);
-const BadRequestError = require(`../errors/bad-request-error`);
+class CommentsController {
+  constructor(commentsStore) {
+    this.commentsStore = commentsStore;
+  }
 
-const getComment = (req, res) => {
-  const commentId = req.params.commentId;
-  const langId = req.params.langId;
-  const authorId = req.params.authorId;
-  const bookId = req.params.bookId;
-  const articleId = req.params.articleId;
+  getComment = async (req, res) => {
+    const commentId = req.params.commentId;
+    const langId = req.params.langId;
+    const authorId = req.params.authorId;
+    const bookId = req.params.bookId;
+    const articleId = req.params.articleId;
 
-  const data = commentsStore.getComment(langId, commentId, authorId, bookId, articleId);
+    const data = await this.commentsStore.getComment(langId, commentId, authorId, bookId, articleId);
 
-  res.send(data);
-};
+    if (data) {
+      res.send(data);
+    } else {
+      res.send({});
+    }
+  };
 
-const getCommentMenu = (req, res) => {
-  const langId = req.params.langId;
-  const bookId = req.params.bookId;
-  const articleId = req.params.articleId;
+  getCommentMenu = async (req, res) => {
+    const langId = req.params.langId;
+    const bookId = req.params.bookId;
+    const articleId = req.params.articleId;
 
-  const comments = commentsStore.getDataComments(articleId, bookId);
+    const comments = await this.commentsStore.getDataComments(articleId, bookId);
+    const isLangValid = languagesStore.getLangById(langId);
 
-  if (comments && comments.length) {
-    const commentsLangs = comments.reduce((result, c) => {
-      if (!result.includes(c.lang)) {
-        result.push(c.lang);
-      }
+    if (comments && comments.length && isLangValid) {
+      const commentsLangs = comments.reduce((result, c) => {
+        if (!result.includes(c.langId)) {
+          result.push(c.langId);
+        }
 
-      return result;
-    }, []);
+        return result;
+      }, []);
 
-    const commentMenu = languagesStore.getLangsMenu(commentsLangs, langId);
+      const commentMenu = languagesStore.getLangsMenu(commentsLangs, langId);
 
-    comments.forEach((c) => {
-      const commentMenuItem = commentMenu.find((i) => {
-        return i.langId === c.lang;
+      comments.forEach((c) => {
+        const commentMenuItem = commentMenu.find((i) => {
+          return i.langId === c.langId;
+        });
+
+        c.authorName = authorsStore.getAuthorName(c.authorId, c.langId);
+
+        commentMenuItem.comments = commentMenuItem.comments || [];
+        commentMenuItem.comments.push(c);
       });
 
-      c.authorName = authorsStore.getAuthorName(c.author, c.lang);
-
-      commentMenuItem.comments = commentMenuItem.comments || [];
-      commentMenuItem.comments.push(c);
-    });
-
-    res.send(commentMenu);
-  } else {
-    res.send([]);
+      res.send(commentMenu);
+    } else {
+      res.send([]);
+    }
   }
-};
+}
 
-module.exports = {
-  getComment,
-  getCommentMenu
-};
+module.exports = CommentsController;

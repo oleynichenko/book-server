@@ -1,38 +1,48 @@
-const e = require(`../db/data/articles/pticha-en-bb.json`);
-const f = require(`../db/data/articles/pticha-he-orhasulam.json`);
-const g = require(`../db/data/articles/pticha-ru-bb.json`);
-const h = require(`../db/data/articles/pticha-ru-zh.json`);
-const aa = require(`../db/data/articles/foreword-zoar-he-orhasulam`);
-const b = require(`../db/data/articles/foreword-zoar-ru-zh`);
-const c = require(`../db/data/articles/foreword-zoar-ru-bb`);
-const d = require(`../db/data/articles/foreword-zoar-en-bb`);
+const {getDb} = require(`../db`);
 
-const _articles = aa.concat(b, c, d, f, e, g, h);
+const getCollection = async () => {
+  const db = await getDb();
 
-const getArticle = (lang, book, id, author) => {
-  return _articles.find((a) => {
-    return a.articleId === id
-      && a.authorId === author
-      && a.bookId === book
-      && a.langId === lang;
-  });
+  return db.collection(`articles`);
 };
 
-const getDataArticlesById = (id, bookId) => {
-  return _articles
-    .filter((a) => a.articleId === id && a.bookId === bookId)
-    .map((a) => {
-      return {
-        articleId: a.articleId,
-        authorId: a.authorId,
-        langId: a.langId,
-        articleTitle: a.title // для title на странице Статьиsaq]=
-      };
-    });
-};
+class AriclesStore {
+  constructor(collection) {
+    this.collection = collection;
+  }
 
-module.exports = {
-  getArticle,
-  getDataArticlesById
-};
+  getArticle(lang, book, id, author) {
+    const query = {
+      langId: lang,
+      articleId: id,
+      authorId: author,
+      bookId: book
+    };
 
+    return this.collection.findOne(query);
+  }
+
+  getDataArticlesById(id, bookId) {
+    const query = {
+      articleId: id,
+      bookId
+    };
+
+    const projection = {
+      _id: 0,
+      articleId: 1,
+      authorId: 1,
+      langId: 1,
+      title: 1
+    };
+
+    return this.collection.find(query, {projection}).toArray();
+  }
+}
+
+module.exports = async () => {
+  const collection = await getCollection()
+    .catch((error) => console.error(`Failed to set up "articles"-collection`, error));
+
+  return new AriclesStore(collection);
+};

@@ -158,17 +158,17 @@
         "children": [
           {
             "title": {
-              "ru": "Пункт 1",
-              "he": "אות א",
-              "en": "Paragraph 1"
+              "ru": "1",
+              "he": "א",
+              "en": "1"
             },
             "articleId": "1"
           },
           {
             "title": {
-              "ru": "Пункт 2",
-              "he": "אות ב",
-              "en": "Paragraph 2"
+              "ru": "2",
+              "he": "ב",
+              "en": "2"
             },
             "articleId": "2"
           }
@@ -183,19 +183,11 @@
         "children": [
           {
             "title": {
-              "ru": "Пункт 11",
-              "he": "אות יא",
-              "en": "Paragraph 11"
+              "ru": "18",
+              "he": "יח",
+              "en": "18"
             },
-            "articleId": "11"
-          },
-          {
-            "title": {
-              "ru": "Пункт 12",
-              "he": "אות יב",
-              "en": "Paragraph 12"
-            },
-            "articleId": "12"
+            "articleId": "18"
           }
         ]
       }

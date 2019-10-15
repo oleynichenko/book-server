@@ -1,11 +1,25 @@
 const express = require(`express`);
-const controller = require(`../controllers/article-controller`);
+const {async} = require(`../util`);
 
-const articleRouter = new express.Router();
+const ArticlesController = require(`../controllers/article-controller`);
+const getArticlesStore = require(`../stores/articles-store`);
 
-// статьи доступные книге согласно book.sources
-articleRouter.get(`/menu/:articleId/:langId/:bookId`, controller.getArticleMenu);
+module.exports = async () => {
+  const articleRouter = new express.Router();
 
-articleRouter.get(`/:articleId/:authorId/:langId/:bookId`, controller.getArticle);
+  const articlesStore = await getArticlesStore();
+  const controller = new ArticlesController(articlesStore);
 
-module.exports = articleRouter;
+  // статьи доступные книге согласно book.sources
+  articleRouter.get(
+      `/menu/:articleId/:langId/:bookId`,
+      async(controller.getArticleMenu)
+  );
+
+  articleRouter.get(
+      `/:articleId/:authorId/:langId/:bookId`,
+      async(controller.getArticle)
+  );
+
+  return articleRouter;
+};

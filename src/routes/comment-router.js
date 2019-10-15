@@ -1,10 +1,24 @@
 const express = require(`express`);
-const controller = require(`../controllers/comment-controller`);
+const {async} = require(`../util`);
 
-const commentRouter = new express.Router();
+const CommentsController = require(`../controllers/comment-controller`);
+const getCommentsStore = require(`../stores/comments-store`);
 
-commentRouter.get(`/menu/:articleId/:langId/:bookId`, controller.getCommentMenu);
+module.exports = async () => {
+  const commentRouter = new express.Router();
 
-commentRouter.get(`/:commentId/:authorId/:langId/:bookId/:articleId`, controller.getComment);
+  const commentsStore = await getCommentsStore();
+  const controller = new CommentsController(commentsStore);
 
-module.exports = commentRouter;
+  commentRouter.get(
+      `/menu/:articleId/:langId/:bookId`,
+      async(controller.getCommentMenu)
+  );
+
+  commentRouter.get(
+      `/:commentId/:authorId/:langId/:bookId/:articleId`,
+      async(controller.getComment)
+  );
+
+  return commentRouter;
+};

@@ -16,14 +16,20 @@ const getLangById = (id) => {
 
 // ids: [lang], lang - язык необходимого перевода
 const getLangsMenu = (ids, lang) => {
-  const languages = _getLanguagesByIds(ids);
+  const isLangAvailable = getLangById(lang);
 
-  return languages.map((item) => {
-    return {
-      langId: item.langId,
-      name: item.name[lang]
-    };
-  });
+  if (isLangAvailable) {
+    const languages = _getLanguagesByIds(ids);
+
+    return languages.map((item) => {
+      return {
+        langId: item.langId,
+        name: item.name[lang]
+      };
+    });
+  } else {
+    return null;
+  }
 };
 
 const getLangName = (id, lang) => {

@@ -1,19 +1,16 @@
-const config = require(`../config`);
-const allowAccess = require(`../middlewares/allow-access`);
+const handleErrors = require(`../errors/handle-errors`);
 
 const bookRouter = require(`./book-router`);
-const articleRouter = require(`./article-router`);
-const commentRouter = require(`./comment-router`);
 const pageRouter = require(`./page-router`);
 const libraryRouter = require(`./library-router`);
 const langsRouter = require(`./langs-router`);
 
-const handleErrors = require(`../errors/handle-errors`);
+const getArticlesRouter = require(`./article-router`);
+const getCommentsRouter = require(`./comment-router`);
 
-const init = (app) => {
-  if (config.NODE_ENV === `development`) {
-    app.use(allowAccess);
-  }
+const init = async (app) => {
+  const commentRouter = await getCommentsRouter();
+  const articleRouter = await getArticlesRouter();
 
   app.use(`/books`, bookRouter);
   app.use(`/articles`, articleRouter);
