@@ -1,5 +1,3 @@
 showing in console stack of notfounderrrors /article 12
-
 проверить стабильность работы при отключении и включении базы
-
 make indexes in base
