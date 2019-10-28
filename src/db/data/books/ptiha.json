@@ -1,6 +1,7 @@
 [
   {
     "bookId": "pticha",
+    "authorId": "baal-sulam",
     "libraryUrl": "http://kab.tv",
     "langs": ["ru", "he", "en"],
     "sources": {
@@ -102,6 +103,7 @@
   },
   {
     "bookId": "foreword-zoar",
+    "authorId": "baal-sulam",
     "langs": ["ru", "en", "he"],
     "sources": {
       "ru": {
