@@ -1,4 +1,5 @@
 const bookStore = require(`../stores/books-store`);
+const authorStore = require(`../stores/authors-store`);
 const NotFoundError = require(`../errors/not-found-error`);
 const BadRequestError = require(`../errors/bad-request-error`);
 // langId - это всегда язык интерфейса
@@ -52,6 +53,7 @@ const getBookData = (req, res) => {
 
   if (book) {
     if (book.langs.includes(langId)) {
+      const author = authorStore.getAuthorName(book.authorId, langId);
       const sideMenu = _getBookSideMenu(langId, book.sideMenu);
       const title = book.title[langId];
       const mainMenu = _getBookMainMenu(langId, book.mainMenu);
@@ -61,6 +63,7 @@ const getBookData = (req, res) => {
 
       const data = {
         title,
+        author,
         libraryUrl,
         sources,
         langs,

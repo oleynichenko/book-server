@@ -1,5 +1,33 @@
 [
   {
+    "authorId": "baal-sulam",
+    "name": {
+      "ru": "Бааль Сулам",
+      "he": "בעל הסולם",
+      "en": "Baal HaSulam"
+    },
+    "description": {
+      "ru": "",
+      "he": "",
+      "en": ""
+    },
+    "contacts": ""
+  },
+  {
+    "authorId": "eli-lapid",
+    "name": {
+      "ru": "Эли Лапид",
+      "he": "Eli Lapid",
+      "en": "Eli Lapid"
+    },
+    "description": {
+      "ru": "",
+      "he": "",
+      "en": ""
+    },
+    "contacts": ""
+  },
+  {
     "authorId": "bb",
     "name": {
       "ru": "Бней Барух",
