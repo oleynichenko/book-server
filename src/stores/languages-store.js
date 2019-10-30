@@ -42,9 +42,20 @@ const getLangName = (id, lang) => {
   return language.name[lang];
 };
 
+const getLangNames = (id) => {
+  const languages = _getLanguages();
+
+  const language = languages.find((a) => {
+    return a.langId === id;
+  });
+
+  return language.name;
+};
+
 module.exports = {
   getLangsMenu,
   getLangName,
-  getLangById
+  getLangById,
+  getLangNames
 };
 

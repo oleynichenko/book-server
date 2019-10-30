@@ -30,8 +30,18 @@ const getAuthorName = (id, lang) => {
   return author.name[lang];
 };
 
-module.exports = {
-  getAuthorsNames,
-  getAuthorName
+const getAuthorNames = (id) => {
+  const authors = _getAuthors();
+
+  const author = authors.find((a) => {
+    return a.authorId === id;
+  });
+
+  return author.name;
 };
 
+module.exports = {
+  getAuthorsNames,
+  getAuthorName,
+  getAuthorNames
+};
