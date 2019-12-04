@@ -3,7 +3,7 @@
     "pageId": "about",
     "sourceId": "pticha",
     "langId": "ru",
-    "content": "<h1>Hello world</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eius error est maxime odit perferendis porro reiciendis sit ut velit. Amet animi aspernatur consequatur cupiditate deleniti distinctio ducimus eveniet expedita facilis inventore libero nisi officia placeat quo recusandae repellendus saepe temporibus ut voluptatem, voluptates. Accusamus adipisci assumenda, autem beatae, cumque ducimus eius eveniet inventore libero magnam nam natus nihil officiis praesentium provident quasi quia quis repellat saepe similique soluta voluptas voluptatum. Atque cum eveniet, fugiat laborum praesentium quod reiciendis rem velit voluptatem voluptatum? Autem consequatur debitis, dignissimos, enim facilis labore laborum minima nulla possimus reiciendis soluta voluptates? Eveniet ipsum, nihil. Accusamus animi debitis doloremque et facilis labore nesciunt nostrum quasi suscipit ut. Dolorem labore laborum porro qui quidem. Ad aliquid at fugit impedit incidunt magni modi mollitia numquam quod sunt? Ab animi, debitis distinctio incidunt laborum nesciunt nostrum nulla praesentium sunt ullam unde vitae voluptate? Ad at autem consequatur consequuntur distinctio eos exercitationem, facilis hic iste iusto mollitia nam odit perferendis perspiciatis quas qui quidem reiciendis saepe sapiente veritatis? Excepturi illum in laboriosam numquam quibusdam! Assumenda eveniet laborum similique sint sunt. Architecto corporis cupiditate dignissimos dolore doloremque fuga fugit natus pariatur perspiciatis, quidem quisquam rerum sit sunt, totam voluptatem voluptates!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eius error est maxime odit perferendis porro reiciendis sit ut velit. Amet animi aspernatur consequatur cupiditate deleniti distinctio ducimus eveniet expedita facilis inventore libero nisi officia placeat quo recusandae repellendus saepe temporibus ut voluptatem, voluptates. Accusamus adipisci assumenda, autem beatae, cumque ducimus eius eveniet inventore libero magnam nam natus nihil officiis praesentium provident quasi quia quis repellat saepe similique soluta voluptas voluptatum. Atque cum eveniet, fugiat laborum praesentium quod reiciendis rem velit voluptatem voluptatum? Autem consequatur debitis, dignissimos, enim facilis labore laborum minima nulla possimus reiciendis soluta voluptates? Eveniet ipsum, nihil. Accusamus animi debitis doloremque et facilis labore nesciunt nostrum quasi suscipit ut. Dolorem labore laborum porro qui quidem. Ad aliquid at fugit impedit incidunt magni modi mollitia numquam quod sunt? Ab animi, debitis distinctio incidunt laborum nesciunt nostrum nulla praesentium sunt ullam unde vitae voluptate? Ad at autem consequatur consequuntur distinctio eos exercitationem, facilis hic iste iusto mollitia nam odit perferendis perspiciatis quas qui quidem reiciendis saepe sapiente veritatis? Excepturi illum in laboriosam numquam quibusdam! Assumenda eveniet laborum similique sint sunt. Architecto corporis cupiditate dignissimos dolore doloremque fuga fugit natus pariatur perspiciatis, quidem quisquam rerum sit sunt, totam voluptatem voluptates!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eius error est maxime odit perferendis porro reiciendis sit ut velit. Amet animi aspernatur consequatur cupiditate deleniti distinctio ducimus eveniet expedita facilis inventore libero nisi officia placeat quo recusandae repellendus saepe temporibus ut voluptatem, voluptates. Accusamus adipisci assumenda, autem beatae, cumque ducimus eius eveniet inventore libero magnam nam natus nihil officiis praesentium provident quasi quia quis repellat saepe similique soluta voluptas voluptatum. Atque cum eveniet, fugiat laborum praesentium quod reiciendis rem velit voluptatem voluptatum? Autem consequatur debitis, dignissimos, enim facilis labore laborum minima nulla possimus reiciendis soluta voluptates? Eveniet ipsum, nihil. Accusamus animi debitis doloremque et facilis labore nesciunt nostrum quasi suscipit ut. Dolorem labore laborum porro qui quidem. Ad aliquid at fugit impedit incidunt magni modi mollitia numquam quod sunt? Ab animi, debitis distinctio incidunt laborum nesciunt nostrum nulla praesentium sunt ullam unde vitae voluptate? Ad at autem consequatur consequuntur distinctio eos exercitationem, facilis hic iste iusto mollitia nam odit perferendis perspiciatis quas qui quidem reiciendis saepe sapiente veritatis? Excepturi illum in laboriosam numquam quibusdam! Assumenda eveniet laborum similique sint sunt. Architecto corporis cupiditate dignissimos dolore doloremque fuga fugit natus pariatur perspiciatis, quidem quisquam rerum sit sunt, totam voluptatem voluptates!</p>"
+    "content": "<h1>О статье \"Введение в мудрость Каббалы\"</h1><p>Другое название этой статьи — \"Птиха леХохмат аКаббала\". Написана <a href=\"https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%B0%D0%BB%D1%8C-%D0%A1%D1%83%D0%BB%D0%B0%D0%BC\" target=\"_blank\">Йегудой Лейб Алеви Ашлагом</a> (Бааль Сулам) как одно из предисловий к его комментарию на книгу Зоар. Два других это \"Предисловие к книге Зоар\" и \"Вступление к книге Зоар\".</p><p>Является кратким изложением материала книги \"Талмуд Десяти Сфирот\" (ТЭС).</p><p>Доступные на сайте языки перевода статьи:</p><ul><li>Русский</li><li>Английский</li><li>Иврит</li></ul><p>Текстовые комментарии:</p><ul><li>р. Авраам Брандвейн - русский</li><li>р. Барух Ашлаг - русский</li></ul><p>Уроки:</p><ul><li>Эли Лапид - русский</li></ul>"
   },
   {
     "pageId": "about",
@@ -21,7 +21,7 @@
     "pageId": "project",
     "sourceId": "pticha",
     "langId": "ru",
-    "content": "<p>Привте project</p>"
+    "content": "<h1>О проекте JBOOK</h1><p>JBOOK — библиотека книг по иудаизму для читателей не владеющим ивритом. Ее основная задача — сделать учебу максимально удобной.</p><p>Здесь вы можете:</p><ul><li>читать одновременно несколько переводов книги на знакомый вам язык при этом видя и текст оригинала</li><li>быстро переключаться с текста книги на комментарии</li><li>смотреть уроки посвященные конкретным разделам книги</li><li>быстро находить определения терминов</li><li>продолжать работать с книгой без доступа к сети интернет</li></ul><p>Функционал сайта продолжает совершенствоваться. Связаться с автором проекта можно через <a href=\"mailto:oleynichenkos@gmail.com?subject=Question from JBOOK\">email</a>.</p>"
   },
   {
     "pageId": "project",
@@ -36,22 +36,22 @@
     "content": "<p>Шалом project</p>"
   },
   {
-    "pageId": "translators",
+    "pageId": "authors",
     "sourceId": "pticha",
     "langId": "ru",
-    "content": "<p>Привет translators</p>"
+    "content": "<h1>Комментаторы, преподаватели и переводчики</h1>"
   },
   {
-    "pageId": "translators",
+    "pageId": "authors",
     "sourceId": "pticha",
     "langId": "en",
-    "content": "<p>Hello translators</p>"
+    "content": "<h1>Comment authors, educators, and translators</h1>"
   },
   {
-    "pageId": "translators",
+    "pageId": "authors",
     "sourceId": "pticha",
     "langId": "he",
-    "content": "<p>Шалом translators</p>"
+    "content": "<h1>הגיבו מחברים, מחנכים ומתרגמים</h1>"
   },
   {
     "pageId": "about",
@@ -90,19 +90,19 @@
     "content": "<p>Шалом world</p>"
   },
   {
-    "pageId": "translators",
+    "pageId": "authors",
     "sourceId": "foreword-zoar",
     "langId": "ru",
     "content": "<p>Првт world</p>"
   },
   {
-    "pageId": "translators",
+    "pageId": "authors",
     "sourceId": "foreword-zoar",
     "langId": "en",
     "content": "<p>Hello world</p>"
   },
   {
-    "pageId": "translators",
+    "pageId": "authors",
     "sourceId": "foreword-zoar",
     "langId": "he",
     "content": "<p>Шалом world</p>"
