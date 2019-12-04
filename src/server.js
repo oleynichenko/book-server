@@ -18,6 +18,8 @@ const _createServer = async () => {
 const run = async () => {
   const server = await _createServer();
 
+  server.use(express.static(`static`));
+
   server.listen(config.PORT, (err) => {
     if (err) {
       return console.error(`Ошибка при запуске сервера`, err.message);

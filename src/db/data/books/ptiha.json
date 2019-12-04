@@ -18,6 +18,7 @@
         "defaultAuthor": "orhasulam"
       }
     },
+    "authors": ["eli-lapid", "bv", "zaharin", "rabash"],
     "title": {
       "ru": "Введение в мудрость Каббалы",
       "he": "פתיחה לחכמת הקבלה",
@@ -26,9 +27,9 @@
     "mainMenu": [
       {
         "title": {
-          "ru": "О книге",
-          "he": "על הספר",
-          "en": "About book"
+          "ru": "О статье",
+          "he": "על מאמר",
+          "en": "About article"
         },
         "pageId": "about"
       },
@@ -42,11 +43,11 @@
       },
       {
         "title": {
-          "ru": "Переводчики",
-          "he": "מתרגמים",
-          "en": "Translators"
+          "ru": "Авторы",
+          "he": "המחברים",
+          "en": "Authors"
         },
-        "pageId": "translators"
+        "pageId": "authors"
       }
     ],
     "sideMenu": [
@@ -145,9 +146,9 @@
         "title": {
           "ru": "Переводчики",
           "he": "מתרגמים",
-          "en": "Translators"
+          "en": "Authors"
         },
-        "pageId": "translators"
+        "pageId": "authors"
       }
     ],
     "sideMenu": [

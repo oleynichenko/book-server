@@ -4,6 +4,7 @@ const bookRouter = require(`./book-router`);
 const pageRouter = require(`./page-router`);
 const libraryRouter = require(`./library-router`);
 const langsRouter = require(`./langs-router`);
+const authorRouter = require(`./author-router`);
 
 const getArticlesRouter = require(`./article-router`);
 const getCommentsRouter = require(`./comment-router`);
@@ -21,6 +22,7 @@ const init = async (app) => {
   app.use(`/library`, libraryRouter);
   app.use(`/langs`, langsRouter);
   app.use(`/lessons`, lessonRouter);
+  app.use(`/authors`, authorRouter);
 
   app.use(handleErrors);
 };
