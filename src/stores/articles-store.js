@@ -19,7 +19,11 @@ class AriclesStore {
       bookId: book
     };
 
-    return this.collection.findOne(query);
+    const projection = {
+      _id: 0
+    };
+
+    return this.collection.findOne(query, {projection});
   }
 
   getDataArticlesById(id, bookId) {
