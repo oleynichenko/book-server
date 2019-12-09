@@ -14,8 +14,8 @@
         "defaultAuthor": "bb"
       },
       "he": {
-        "authors": ["orhasulam"],
-        "defaultAuthor": "orhasulam"
+        "authors": ["baal-sulam"],
+        "defaultAuthor": "baal-sulam"
       }
     },
     "authors": ["eli-lapid", "bv", "zaharin", "rabash"],
@@ -116,10 +116,11 @@
           "defaultAuthor": "bb"
       },
       "he": {
-        "authors": ["orhasulam"],
-        "defaultAuthor": "orhasulam"
+        "authors": ["baal-sulam"],
+        "defaultAuthor": "baal-sulam"
       }
     },
+    "authors": ["eli-lapid", "zaharin", "rabash"],
     "title": {
       "ru": "Предисловие к книге Зоар",
       "he": "הקדמה לספר הזוהר",
@@ -128,9 +129,9 @@
     "mainMenu": [
       {
         "title": {
-          "ru": "О книге",
-          "he": "על הספר",
-          "en": "About book"
+          "ru": "О статье",
+          "he": "על מאמר",
+          "en": "About article"
         },
         "pageId": "about"
       },
@@ -144,8 +145,8 @@
       },
       {
         "title": {
-          "ru": "Переводчики",
-          "he": "מתרגמים",
+          "ru": "Авторы",
+          "he": "המחברים",
           "en": "Authors"
         },
         "pageId": "authors"
@@ -156,7 +157,7 @@
         "title": {
           "ru": "Пункты 1–10",
           "he": "אוֹתִיוֹת א-י",
-          "en": "Paragraph 1–10"
+          "en": "Paragraphs 1–10"
         },
         "children": [
           {
@@ -179,9 +180,9 @@
       },
       {
         "title": {
-          "ru": "Пункты 11–21",
+          "ru": "Пункты 11–20",
           "he": "אוֹתִיוֹת יא-כ",
-          "en": "Paragraph 11–21"
+          "en": "Paragraphs 11–20"
         },
         "children": [
           {
