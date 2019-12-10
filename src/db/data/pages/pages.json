@@ -3,37 +3,34 @@
     "pageId": "about",
     "sourceId": "pticha",
     "langId": "ru",
-    "content": "<h1>О статье \"Введение в мудрость Каббалы\"</h1><p>Другое название этой статьи — \"Птиха леХохмат аКаббала\". Написана <a href=\"https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%B0%D0%BB%D1%8C-%D0%A1%D1%83%D0%BB%D0%B0%D0%BC\" target=\"_blank\">Йегудой Лейб Алеви Ашлагом</a> (Бааль Сулам) как одно из предисловий к его комментарию на книгу Зоар. Два других это \"Предисловие к книге Зоар\" и \"Вступление к книге Зоар\".</p><p>Является кратким изложением материала книги \"Талмуд Десяти Сфирот\" (ТЭС).</p><p>Доступные на сайте языки перевода статьи:</p><ul><li>Русский</li><li>Английский</li><li>Иврит</li></ul><p>Текстовые комментарии:</p><ul><li>р. Авраам Брандвейн - русский</li><li>р. Барух Ашлаг - русский</li></ul><p>Уроки:</p><ul><li>Эли Лапид - русский</li></ul>"
+    "content": "<h1>О статье \"Введение в мудрость Каббалы\"</h1><img data-img=\"right\" src=\"http://localhost:3001/img/baal-sulam.jpg\"><p>Другое название этой статьи — \"Птиха леХохмат аКаббала\". Написана <a href=\"https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%B0%D0%BB%D1%8C-%D0%A1%D1%83%D0%BB%D0%B0%D0%BC\" target=\"_blank\">Йегудой Лейб Алеви Ашлагом</a> (Бааль Сулам) как одно из предисловий к его комментарию на книгу Зоар. Два других это \"Предисловие к книге Зоар\" и \"Вступление к книге Зоар\".</p><p>Является кратким изложением материала книги \"Талмуд Десяти Сфирот\" (ТЭС).</p><p>Доступные на сайте языки перевода статьи:</p><ul><li>Русский</li><li>Английский</li><li>Иврит</li></ul><p>Текстовые комментарии:</p><ul><li>р. Авраам Брандвейн - русский</li><li>р. Барух Ашлаг - русский</li></ul><p>Уроки:</p><ul><li>Эли Лапид - русский</li></ul>"
   },
   {
     "pageId": "about",
     "sourceId": "pticha",
     "langId": "en",
-    "content": "<p>Hello book</p>"
+    "content": ""
   },
   {
     "pageId": "about",
     "sourceId": "pticha",
     "langId": "he",
-    "content": "<p>Shalom book</p>"
+    "content": ""
   },
   {
     "pageId": "project",
-    "sourceId": "pticha",
     "langId": "ru",
-    "content": "<h1>О проекте JBOOK</h1><p>JBOOK — библиотека книг по иудаизму для читателей не владеющим ивритом. Ее основная задача — сделать учебу максимально удобной.</p><p>Здесь вы можете:</p><ul><li>читать одновременно несколько переводов книги на знакомый вам язык при этом видя и текст оригинала</li><li>быстро переключаться с текста книги на комментарии</li><li>смотреть уроки посвященные конкретным разделам книги</li><li>быстро находить определения терминов</li><li>продолжать работать с книгой без доступа к сети интернет</li></ul><p>Функционал сайта продолжает совершенствоваться. Связаться с автором проекта можно через <a href=\"mailto:oleynichenkos@gmail.com?subject=Question from JBOOK\">email</a>.</p>"
+    "content": "<h1>О проекте JBOOK</h1><p>JBOOK — библиотека книг по иудаизму для читателей не владеющим ивритом. Ее основная задача — сделать учебу максимально удобной.</p><p>Здесь вы можете:</p><ul><li>читать одновременно несколько переводов книги на знакомый вам язык при этом видя и текст оригинала</li><li>быстро переключаться с текста книги на комментарии</li><li>смотреть уроки посвященные конкретным разделам книги</li><li>быстро находить определения терминов</li><li>продолжать работать с книгой без доступа к сети интернет</li></ul><p>Функционал сайта продолжает совершенствоваться. Связаться с автором проекта можно через <a href=\"mailto:kurtal1976@gmail.com?subject=Question from JBOOK\">email</a>.</p>"
   },
   {
     "pageId": "project",
-    "sourceId": "pticha",
     "langId": "en",
-    "content": "<p>Hello project</p>"
+    "content": ""
   },
   {
     "pageId": "project",
-    "sourceId": "pticha",
     "langId": "he",
-    "content": "<p>Шалом project</p>"
+    "content": ""
   },
   {
     "pageId": "authors",
@@ -57,90 +54,72 @@
     "pageId": "about",
     "sourceId": "foreword-zoar",
     "langId": "ru",
-    "content": "<p>Привет book</p>"
+    "content": ""
   },
   {
     "pageId": "about",
     "sourceId": "foreword-zoar",
     "langId": "en",
-    "content": "<h1>Hello world</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eius error est maxime odit perferendis porro reiciendis sit ut velit. Amet animi aspernatur consequatur cupiditate deleniti distinctio ducimus eveniet expedita facilis inventore libero nisi officia placeat quo recusandae repellendus saepe temporibus ut voluptatem, voluptates. Accusamus adipisci assumenda, autem beatae, cumque ducimus eius eveniet inventore libero magnam nam natus nihil officiis praesentium provident quasi quia quis repellat saepe similique soluta voluptas voluptatum. Atque cum eveniet, fugiat laborum praesentium quod reiciendis rem velit voluptatem voluptatum? Autem consequatur debitis, dignissimos, enim facilis labore laborum minima nulla possimus reiciendis soluta voluptates? Eveniet ipsum, nihil. Accusamus animi debitis doloremque et facilis labore nesciunt nostrum quasi suscipit ut. Dolorem labore laborum porro qui quidem. Ad aliquid at fugit impedit incidunt magni modi mollitia numquam quod sunt? Ab animi, debitis distinctio incidunt laborum nesciunt nostrum nulla praesentium sunt ullam unde vitae voluptate? Ad at autem consequatur consequuntur distinctio eos exercitationem, facilis hic iste iusto mollitia nam odit perferendis perspiciatis quas qui quidem reiciendis saepe sapiente veritatis? Excepturi illum in laboriosam numquam quibusdam! Assumenda eveniet laborum similique sint sunt. Architecto corporis cupiditate dignissimos dolore doloremque fuga fugit natus pariatur perspiciatis, quidem quisquam rerum sit sunt, totam voluptatem voluptates!</p>"
+    "content": ""
   },
   {
     "pageId": "about",
     "sourceId": "foreword-zoar",
     "langId": "he",
-    "content": "<h1>Шалом world</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eius error est maxime odit perferendis porro reiciendis sit ut velit. Amet animi aspernatur consequatur cupiditate deleniti distinctio ducimus eveniet expedita facilis inventore libero nisi officia placeat quo recusandae repellendus saepe temporibus ut voluptatem, voluptates. Accusamus adipisci assumenda, autem beatae, cumque ducimus eius eveniet inventore libero magnam nam natus nihil officiis praesentium provident quasi quia quis repellat saepe similique soluta voluptas voluptatum. Atque cum eveniet, fugiat laborum praesentium quod reiciendis rem velit voluptatem voluptatum? Autem consequatur debitis, dignissimos, enim facilis labore laborum minima nulla possimus reiciendis soluta voluptates? Eveniet ipsum, nihil. Accusamus animi debitis doloremque et facilis labore nesciunt nostrum quasi suscipit ut. Dolorem labore laborum porro qui quidem. Ad aliquid at fugit impedit incidunt magni modi mollitia numquam quod sunt? Ab animi, debitis distinctio incidunt laborum nesciunt nostrum nulla praesentium sunt ullam unde vitae voluptate? Ad at autem consequatur consequuntur distinctio eos exercitationem, facilis hic iste iusto mollitia nam odit perferendis perspiciatis quas qui quidem reiciendis saepe sapiente veritatis? Excepturi illum in laboriosam numquam quibusdam! Assumenda eveniet laborum similique sint sunt. Architecto corporis cupiditate dignissimos dolore doloremque fuga fugit natus pariatur perspiciatis, quidem quisquam rerum sit sunt, totam voluptatem voluptates!</p>"
-  },
-  {
-    "pageId": "project",
-    "sourceId": "foreword-zoar",
-    "langId": "ru",
-    "content": "<p>Привет world</p>"
-  },
-  {
-    "pageId": "project",
-    "sourceId": "foreword-zoar",
-    "langId": "en",
-    "content": "<p>Hello world</p>"
-  },
-  {
-    "pageId": "project",
-    "sourceId": "foreword-zoar",
-    "langId": "he",
-    "content": "<p>Шалом world</p>"
+    "content": ""
   },
   {
     "pageId": "authors",
     "sourceId": "foreword-zoar",
     "langId": "ru",
-    "content": "<p>Првт world</p>"
+    "content": ""
   },
   {
     "pageId": "authors",
     "sourceId": "foreword-zoar",
     "langId": "en",
-    "content": "<p>Hello world</p>"
+    "content": ""
   },
   {
     "pageId": "authors",
     "sourceId": "foreword-zoar",
     "langId": "he",
-    "content": "<p>Шалом world</p>"
+    "content": ""
   },
   {
     "pageId": "about",
     "sourceId": "kab",
     "langId": "ru",
-    "content": "<h1>ПРивте about</h1><p>Но диаграммы связей являются только методом политического участия и объединены в целые кластеры себе подобных. Безусловно, сложившаяся структура организации позволяет выполнить важные задания по разработке инновационных методов управления процессами. </p><p>Современные технологии достигли такого уровня, что экономическая повестка сегодняшнего дня говорит о возможностях первоочередных требований. Но существующая теория является качественно новой ступенью благоприятных перспектив. Приятно, граждане, наблюдать, как ключевые особенности структуры проекта объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что экономическая повестка сегодняшнего дня создаёт предпосылки для существующих финансовых и административных условий. </p><p>Разнообразный и богатый опыт говорит нам, что высококачественный прототип будущего проекта позволяет выполнить важные задания по разработке первоочередных требований. Ясность нашей позиции очевидна: сплочённость команды профессионалов обеспечивает широкому кругу (специалистов) участие в формировании как самодостаточных, так и внешне зависимых концептуальных решений. С другой стороны, дальнейшее развитие различных форм деятельности позволяет выполнить важные задания по разработке дальнейших направлений развития. Задача организации, в особенности же высокое качество позиционных исследований не оставляет шанса для распределения внутренних резервов и ресурсов. </p><p>С другой стороны, начало повседневной работы по формированию позиции способствует повышению качества стандартных подходов. А ещё многие известные личности, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут описаны максимально подробно. Также как консультация с широким активом предопределяет высокую востребованность новых предложений. В своём стремлении повысить качество жизни, они забывают, что постоянный количественный рост и сфера нашей активности, в своём классическом представлении, допускает внедрение системы обучения кадров, соответствующей насущным потребностям. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции однозначно фиксирует необходимость вывода текущих активов.</p>"
+    "content": ""
   },
   {
     "pageId": "about",
     "sourceId": "kab",
     "langId": "en",
-    "content": "<h1>Hello world</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eius error est maxime odit perferendis porro reiciendis sit ut velit. Amet animi aspernatur consequatur cupiditate deleniti distinctio ducimus eveniet expedita facilis inventore libero nisi officia placeat quo recusandae repellendus saepe temporibus ut voluptatem, voluptates. Accusamus adipisci assumenda, autem beatae, cumque ducimus eius eveniet inventore libero magnam nam natus nihil officiis praesentium provident quasi quia quis repellat saepe similique soluta voluptas voluptatum. Atque cum eveniet, fugiat laborum praesentium quod reiciendis rem velit voluptatem voluptatum? Autem consequatur debitis, dignissimos, enim facilis labore laborum minima nulla possimus reiciendis soluta voluptates? Eveniet ipsum, nihil. Accusamus animi debitis doloremque et facilis labore nesciunt nostrum quasi suscipit ut. Dolorem labore laborum porro qui quidem. Ad aliquid at fugit impedit incidunt magni modi mollitia numquam quod sunt? Ab animi, debitis distinctio incidunt laborum nesciunt nostrum nulla praesentium sunt ullam unde vitae voluptate? Ad at autem consequatur consequuntur distinctio eos exercitationem, facilis hic iste iusto mollitia nam odit perferendis perspiciatis quas qui quidem reiciendis saepe sapiente veritatis? Excepturi illum in laboriosam numquam quibusdam! Assumenda eveniet laborum similique sint sunt. Architecto corporis cupiditate dignissimos dolore doloremque fuga fugit natus pariatur perspiciatis, quidem quisquam rerum sit sunt, totam voluptatem voluptates!</p>"
+    "content": ""
   },
   {
     "pageId": "about",
     "sourceId": "kab",
     "langId": "he",
-    "content": "<h1>גם רוסית מבוקשים</h1><p>אחרות. גם רוסית מבוקשים קרן. לכאן בקלות אחרונים דת אחד.העיר שמות תיאטרון שכל של. זאת דת חבריכם הקהילה האנציקלופדיה. ויקי הנדסת לחשבון על קרן. על הרוח זקוק בדף.קרן מה בעברית לחשבון. של אחר המשפט לויקיפדיה. לחבר קהילה או צעד. אל סדר ייִדיש ויקימדיה, מתן אם מדעי והנדסה. מלא הנדסת מדויקים גם, את אנא שאלות מיותר המקובל. צעד אם נבחרים ביולוגיה.שונה העמוד ב אנא, היא של מתוך רשימות מדויקים, זכר את קולנוע תיקונים. אל מתן שתפו קרימינולוגיה ביוטכנולוגיה, כלשהו בהשחתה אנציקלופדיה אל בדף. אל זכר ביוני גיאוגרפיה טכנולוגיה, שכל מתמטיקה העריכהגירסאות או. רבה אם בישול לויקיפדיה פילוסופיה, שנתי נבחרים עוד את, אם היום אחרים כדי. אל להפוך משופרות היא.החול המקובל משפטים אל קרן. את אחר המלצת ולחבר אירועים, ב תורת ניווט העמוד זכר, בקר את דפים טכניים. צעד בה ביוני הקהילה בויקיפדיה. בקר דת יכול חינוך, אחרונים אינטרנט היא גם, צ'ט אל בשפה ניהול. ויש עקרונות למתחילים פילוסופיה אם, מרצועת לרפובליקה כלל את. צעד איטליה ממונרכיה או.יוצרים הקהילה ואלקטרוניקה ב מדע, מתוך להפוך בחירות רבה גם. כלים קודמות פילוסופיה את רבה, את כלל לשון רוסית המזנון. אנא אל וכמקובל לרפובליקה, אל אתה כלכלה טכניים. על כתב מחליטה תיקונים המקושרים. דת עמוד טיפול רבה, שער ולחבר בחירות חרטומים מה, בה הספרות טכנולוגיה אנא. גם מלא ספרדית תקשורת פוליטיקה.המלצת ביוטכנולוגיה העריכהגירסאות קרן את, כיצד שינויים מאמרשיחהצפה אל תנך. גם תנך שאלות לרפובליקה. תיאטרון ארכיאולוגיה מה כתב, יוני עזרה כימיה אם צעד. בה להפוך ארכיאולוגיה זכר. צעד עזרה וכמקובל אם, של מפתח הנאמנים למתחילים מתן. גם מדע מיזמי בדפים אודות, להפוך חופשית ממונרכיה את מלא.בחירות בהיסטוריה מה עזה, אתה ב מאמר טכניים לרפובליקה. פנאי ותשובות מתמטיקה או אתה, לערוך שימושי זאת דת, על מדעי שנתי המדינה שכל. על המלצת קצרמרים ממונרכיה ויש, מושגי גרמנית אל עוד. תנך שתפו יוני בה. אם צעד חשמל קולנוע סטטיסטיקה, תנך מונחים המקובל טכניים על.דרכה נבחרים משופרות על לוח. או צעד הטבע בידור. אתה רביעי תיקונים או, גם בקר עסקים משפטים קצרמרים. גם טיפול הקהילה ואלקטרוניקה רבה.אם מתן מבוקשים ויקיפדיה, העזרה לחשבון אחרונים ב רבה. נפלו שיתופית צ'ט מה. שונה תוכל דפים את כדי, בה זקוק שדרות ברוכים סדר. ויש בה ביולוגיה והגולשים מונחונים, מה כתב לערך תרומה. דת ישראל טבלאות אספרנטו חפש. בה שכל בשפות לחיבור, עוד קבלו המזנון ואלקטרוניקה אם, אם העזרה המלחמה שתי.</p>"
+    "content": ""
   },
   {
     "pageId": "authors",
     "sourceId": "kab",
     "langId": "ru",
-    "content": "<p>Привет authors</p>"
+    "content": ""
   },
   {
     "pageId": "authors",
     "sourceId": "kab",
     "langId": "en",
-    "content": "<h1>Hello world</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eius error est maxime odit perferendis porro reiciendis sit ut velit. Amet animi aspernatur consequatur cupiditate deleniti distinctio ducimus eveniet expedita facilis inventore libero nisi officia placeat quo recusandae repellendus saepe temporibus ut voluptatem, voluptates. Accusamus adipisci assumenda, autem beatae, cumque ducimus eius eveniet inventore libero magnam nam natus nihil officiis praesentium provident quasi quia quis repellat saepe similique soluta voluptas voluptatum. Atque cum eveniet, fugiat laborum praesentium quod reiciendis rem velit voluptatem voluptatum? Autem consequatur debitis, dignissimos, enim facilis labore laborum minima nulla possimus reiciendis soluta voluptates? Eveniet ipsum, nihil. Accusamus animi debitis doloremque et facilis labore nesciunt nostrum quasi suscipit ut. Dolorem labore laborum porro qui quidem. Ad aliquid at fugit impedit incidunt magni modi mollitia numquam quod sunt? Ab animi, debitis distinctio incidunt laborum nesciunt nostrum nulla praesentium sunt ullam unde vitae voluptate? Ad at autem consequatur consequuntur distinctio eos exercitationem, facilis hic iste iusto mollitia nam odit perferendis perspiciatis quas qui quidem reiciendis saepe sapiente veritatis? Excepturi illum in laboriosam numquam quibusdam! Assumenda eveniet laborum similique sint sunt. Architecto corporis cupiditate dignissimos dolore doloremque fuga fugit natus pariatur perspiciatis, quidem quisquam rerum sit sunt, totam voluptatem voluptates!</p>"
+    "content": ""
   },
   {
     "pageId": "authors",
     "sourceId": "kab",
     "langId": "he",
-    "content": "<p>шалом authors</p>"
+    "content": ""
   }
 ]

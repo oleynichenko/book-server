@@ -12,8 +12,9 @@ class CommentsController {
     const authorId = req.params.authorId;
     const bookId = req.params.bookId;
     const articleId = req.params.articleId;
+    const translatorId = req.query.translatorId;
 
-    const data = await this.commentsStore.getComment(langId, commentId, authorId, bookId, articleId);
+    const data = await this.commentsStore.getComment(langId, commentId, authorId, bookId, articleId, translatorId);
 
     if (data) {
       res.send(data);
@@ -47,6 +48,10 @@ class CommentsController {
         });
 
         c.authorName = authorsStore.getAuthorName(c.authorId, c.langId);
+
+        if (c.translatorId) {
+          c.translatorName = authorsStore.getAuthorName(c.translatorId, c.langId);
+        }
 
         commentMenuItem.comments = commentMenuItem.comments || [];
         commentMenuItem.comments.push(c);
