@@ -62,6 +62,7 @@ const getBookData = (req, res) => {
       const libraryUrl = book.libraryUrl;
 
       const data = {
+        authorId: book.authorId,
         title,
         author,
         libraryUrl,

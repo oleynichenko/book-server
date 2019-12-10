@@ -6,7 +6,23 @@ const _getAuthors = () => {
 
 const _getAuthorsByIds = (ids) => {
   const authors = _getAuthors();
+
   return authors.filter((a) => ids.includes(a.authorId));
+};
+
+const getAuthorsByLang = (ids, lang) => {
+  const authors = _getAuthorsByIds(ids);
+
+  return authors.map((a) => {
+    return {
+      id: a.authorId,
+      name: a.name[lang],
+      description: a.description[lang],
+      contacts: a.contacts,
+      country: a.country[lang],
+      img: a.img
+    };
+  });
 };
 
 const getAuthorsNames = (lang, ids) => {
@@ -43,5 +59,6 @@ const getAuthorNames = (id) => {
 module.exports = {
   getAuthorsNames,
   getAuthorName,
+  getAuthorsByLang,
   getAuthorNames
 };

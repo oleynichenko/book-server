@@ -21,6 +21,7 @@ class CommentsStore {
       _id: 0,
       commentId: 1,
       authorId: 1,
+      translatorId: 1,
       langId: 1,
       articleId: 1,
       title: 1
@@ -29,7 +30,7 @@ class CommentsStore {
     return this.collection.find(query, {projection}).toArray();
   }
 
-  getComment(lang, id, author, book, article) {
+  getComment(lang, id, author, book, article, translator) {
     const query = {
       langId: lang,
       commentId: id,
@@ -37,6 +38,10 @@ class CommentsStore {
       bookId: book,
       articleId: article
     };
+
+    if (translator) {
+      query.translatorId = translator;
+    }
 
     return this.collection.findOne(query);
   }
