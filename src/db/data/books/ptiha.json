@@ -6,7 +6,7 @@
     "langs": ["ru", "he", "en"],
     "sources": {
       "ru": {
-        "authors": ["zaharin", "bb"],
+        "authors": ["zaharin"],
         "defaultAuthor": "zaharin"
       },
       "en": {
