@@ -80,9 +80,9 @@
   {
     "authorId": "bb",
     "name": {
-      "ru": "Переводчик неизв.",
-      "he": "מתרגם לא ידוע",
-      "en": "Unk. translator"
+      "ru": "неизвестный",
+      "he": "לא ידוע",
+      "en": "unknown"
     },
     "description": {
       "ru": "",
