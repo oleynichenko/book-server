@@ -80,9 +80,9 @@
   {
     "authorId": "bb",
     "name": {
-      "ru": "Бней Барух",
-      "he": "בני ברוך",
-      "en": "Bnei Baruch"
+      "ru": "Переводчик неизв.",
+      "he": "מתרגם לא ידוע",
+      "en": "Unk. translator"
     },
     "description": {
       "ru": "",
