@@ -99,6 +99,113 @@
             "articleId": "18"
           }
         ]
+      },
+      {
+        "title": {
+          "ru": "Ослабление масаха для создания парцуфа",
+          "he": "הזדככות המסך לאצילות פרצוף",
+          "en": "The Hizdakchut of the Masach to the Emanation of the Partzuf"
+        },
+        "children": [
+          {
+            "title": {
+              "ru": "Пункт 41",
+              "he": "אות מא",
+              "en": "Paragraph 41"
+            },
+            "articleId": "41"
+          },
+          {
+            "title": {
+              "ru": "Пункт 42",
+              "he": "אות מב",
+              "en": "Paragraph 42"
+            },
+            "articleId": "42"
+          },
+          {
+            "title": {
+              "ru": "Пункт 43",
+              "he": "אות מג",
+              "en": "Paragraph 43"
+            },
+            "articleId": "43"
+          },
+          {
+            "title": {
+              "ru": "Пункт 44",
+              "he": "אות מד",
+              "en": "Paragraph 44"
+            },
+            "articleId": "44"
+          },
+          {
+            "title": {
+              "ru": "Пункт 45",
+              "he": "אות מה",
+              "en": "Paragraph 45"
+            },
+            "articleId": "45"
+          }
+        ]
+      },
+      {
+        "title": {
+          "ru": "Таамим, некудот, тагин и отиет",
+          "he": "טעמים נקודות תגין ואותיות",
+          "en": "Taamim, Nekudot, Tagin, Otiot"
+        },
+        "children": [
+          {
+            "title": {
+              "ru": "Пункт 46",
+              "he": "אות מו",
+              "en": "Paragraph 46"
+            },
+            "articleId": "46"
+          },
+          {
+            "title": {
+              "ru": "Пункт 47",
+              "he": "אות מז",
+              "en": "Paragraph 47"
+            },
+            "articleId": "47"
+          },
+          {
+            "title": {
+              "ru": "Пункт 48",
+              "he": "אות מח",
+              "en": "Paragraph 48"
+            },
+            "articleId": "48"
+          },
+          {
+            "title": {
+              "ru": "Пункт 49",
+              "he": "אות מט",
+              "en": "Paragraph 49"
+            },
+            "articleId": "49"
+          }
+        ]
+      },
+      {
+        "title": {
+          "ru": "Рош, тох, соф и облачения парцуфим друг в друга",
+          "he": "ענין רת\"ס שבכל פרצוף וסדר התלבשות הפרצופין זב\"ז",
+          "en": "The Rosh, Toch, Sof and Hitlabshut of the Partzufim in One Another"
+        },
+        "children": [
+          {
+            "title": {
+              "ru": "Пункт 50",
+              "he": "אות נ",
+              "en": "Paragraph 50"
+            },
+            "articleId": "50"
+          }
+        ]
       }
     ]
   },
