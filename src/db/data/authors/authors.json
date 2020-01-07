@@ -97,11 +97,11 @@
     }
   },
   {
-    "authorId": "orhasulam",
+    "authorId": "gotlib",
     "name": {
-      "ru": "Ор Сулам",
-      "he": "אור הסולם",
-      "en": "Or Hasulam"
+      "ru": "Рав Мордехай Готлиб",
+      "he": "הרב גוטליב",
+      "en": "Rav Gotlib"
     },
     "description": {
       "ru": "",
@@ -120,14 +120,21 @@
     "name": {
       "ru": "Авраам Брандвайн",
       "he": "הרב ברנדווין",
-      "en": "Avraham Brandvein"
+      "en": "Rav Avraham Brandvein"
     },
     "description": {
       "ru": "",
       "he": "",
       "en": ""
     },
-    "contacts": [],
+    "contacts": [{
+      "icon": "icon-earth",
+      "link": "http://birkatshalom.org/"
+    },
+      {
+        "icon": "icon-fb",
+        "link": "https://www.facebook.com/gotlivkab"
+      }],
     "country": {
       "ru": "Израиль",
       "he": "ישראל",
