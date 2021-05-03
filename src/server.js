@@ -5,10 +5,8 @@ const allowAccess = require(`./middlewares/allow-access`);
 
 const _createServer = async () => {
   const server = express();
-
-  if (config.NODE_ENV === `development`) {
-    server.use(allowAccess);
-  }
+  console.log(config.NODE_ENV);
+  server.use(allowAccess);
 
   await routes.init(server);
 
