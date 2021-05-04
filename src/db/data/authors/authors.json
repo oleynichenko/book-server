@@ -108,12 +108,22 @@
       "he": "",
       "en": ""
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "icon": "icon-earth",
+        "link": "http://birkatshalom.org/"
+      },
+      {
+        "icon": "icon-fb",
+        "link": "https://www.facebook.com/BirkatShalom.Israel"
+      }
+    ],
     "country": {
       "ru": "Израиль",
       "he": "ישראל",
       "en": "Israel"
-    }
+    },
+    "img": "gotlib.jpg"
   },
   {
     "authorId": "bv",
@@ -128,18 +138,15 @@
       "en": ""
     },
     "contacts": [{
-      "icon": "icon-earth",
-      "link": "http://birkatshalom.org/"
-    },
-      {
-        "icon": "icon-fb",
-        "link": "https://www.facebook.com/gotlivkab"
-      }],
+      "icon": "icon-wiki",
+      "link": "https://en.wikipedia.org/wiki/Avraham_Brandwein"
+    }],
     "country": {
       "ru": "Израиль",
       "he": "ישראל",
       "en": "Israel"
-    }
+    },
+    "img": "brandwein.jpeg"
   },
   {
     "authorId": "zaharin",

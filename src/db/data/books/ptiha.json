@@ -6,7 +6,7 @@
     "langs": ["ru", "he", "en"],
     "sources": {
       "ru": {
-        "authors": ["zaharin"],
+        "authors": ["zaharin", "bb"],
         "defaultAuthor": "zaharin"
       },
       "en": {
@@ -18,7 +18,7 @@
         "defaultAuthor": "baal-sulam"
       }
     },
-    "authors": ["eli-lapid", "bv", "zaharin", "rabash"],
+    "authors": ["eli-lapid", "bv", "zaharin", "rabash", "gotlib"],
     "title": {
       "ru": "Введение в мудрость Каббалы",
       "he": "פתיחה לחכמת הקבלה",
@@ -219,8 +219,8 @@
         "defaultAuthor": "zaharin"
       },
       "en": {
-          "authors": ["bb"],
-          "defaultAuthor": "bb"
+        "authors": ["bb"],
+        "defaultAuthor": "bb"
       },
       "he": {
         "authors": ["baal-sulam"],
