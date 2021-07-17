@@ -303,5 +303,100 @@
         ]
       }
     ]
+  },
+  {
+    "bookId": "foreword-tes",
+    "authorId": "baal-sulam",
+    "langs": ["ru", "en", "he"],
+    "sources": {
+      "ru": {
+        "authors": ["zaharin", "bb"],
+        "defaultAuthor": "zaharin"
+      },
+      "en": {
+          "authors": ["bb"],
+          "defaultAuthor": "bb"
+      },
+      "he": {
+        "authors": ["baal-sulam"],
+        "defaultAuthor": "baal-sulam"
+      }
+    },
+    "authors": ["eli-lapid", "zaharin", "gotlib"],
+    "title": {
+      "ru": "Предисловие к Учению о десяти Сфирот",
+      "he": "הקדמה לתלמוד עשר הספירות",
+      "en": "Introduction to The Study of the Ten Sefirot"
+    },
+    "mainMenu": [
+      {
+        "title": {
+          "ru": "О статье",
+          "he": "על מאמר",
+          "en": "About article"
+        },
+        "pageId": "about"
+      },
+      {
+        "title": {
+          "ru": "О проекте",
+          "he": "על הפרויקט",
+          "en": "About project"
+        },
+        "pageId": "project"
+      },
+      {
+        "title": {
+          "ru": "Авторы",
+          "he": "המחברים",
+          "en": "Authors"
+        },
+        "pageId": "authors"
+      }
+    ],
+    "sideMenu": [
+      {
+        "title": {
+          "ru": "Пункты 1–10",
+          "he": "אוֹתִיוֹת א-י",
+          "en": "Paragraphs 1–10"
+        },
+        "children": [
+          {
+            "title": {
+              "ru": "1",
+              "he": "א",
+              "en": "1"
+            },
+            "articleId": "1"
+          },
+          {
+            "title": {
+              "ru": "2",
+              "he": "ב",
+              "en": "2"
+            },
+            "articleId": "2"
+          }
+        ]
+      },
+      {
+        "title": {
+          "ru": "Пункты 11–20",
+          "he": "אוֹתִיוֹת יא-כ",
+          "en": "Paragraphs 11–20"
+        },
+        "children": [
+          {
+            "title": {
+              "ru": "18",
+              "he": "יח",
+              "en": "18"
+            },
+            "articleId": "18"
+          }
+        ]
+      }
+    ]
   }
 ]
